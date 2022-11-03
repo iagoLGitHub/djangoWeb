@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sitio</title>
+    <link rel=”stylesheet” href="% static 'css/Css.css' %">
+</head>
+<body>
+<div>
+    <h1>Proyecto django</h1>
+
+</div>
+{% for cliente in clientes %}
+<hr>
+<div>
+    <p>DNI: {{cliente.dni}}</p>
+    <p>Nombre: {{cliente.nombre}}
+    <p>Fecha alta: {{cliente.fecha_alta}}</p>
+    <p>Dirección: {{cliente.direccion}}</p>
+    <p>Movil: {{cliente.mobile}}</p>
+</div>
+{% endfor %}
+<hr>
+</body>
+</html>
